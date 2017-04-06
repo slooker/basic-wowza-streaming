@@ -28,7 +28,7 @@ Check 'use authentication' and use the username and password you setup in the fi
 
 Now click Apply, then "OK", then "Start Stream".  It should change to "Stop Stream" to indicate you're streaming now to Wowza.
 
-In a browser, you should now be able to go to http://localhost:3000/?streamKey=<streamKey from OBS>
+In a browser, you should now be able to go to http://localhost:3000/?streamKey=obs-stream-key
 
 === Notes ===
 * On my macbook, it seems like the stream is ~20 seconds behind live.
