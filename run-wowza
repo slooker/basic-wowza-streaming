@@ -1,0 +1,8 @@
+#!/bin/sh
+
+LOG_PATH=/Users/slooker/Documents/logs ## Place on your host to mount your logs volume 
+
+source .credentials 
+
+docker run -it --name wowza-streaming-engine --restart always --expose 1935/tcp --expose 8086/tcp --expose 8087/tcp --expose 8088/tcp --publish 1935:1935 --publish 8086:8086 --publish 8087:8087 --publish 8088:8088 --volume ${LOG_PATH}:/usr/local/WowzaStreamingEngine/logs --entrypoint /sbin/entrypoint.sh --env WSE_MGR_USER=${WSE_MGR_USER} --env WSE_MGR_PASS=${WSE_MGR_PASS} --env WSE_LIC=${WSE_LIC} wowzamedia/wowza-streaming-engine-linux
+
