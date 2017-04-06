@@ -4,7 +4,7 @@ This should work out of the box.  This assumes the following things:
 
 * You've got docker setup
 * You're on OSX (or possibly Linux?)
-* You have a valid license key
+* [You have a valid wowza license key](https://www.wowza.com/pricing/trial)
 * You are using OBS for testing (at least for now)
 
 
