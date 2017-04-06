@@ -5,7 +5,7 @@ This should work out of the box.  This assumes the following things:
 * You've got docker setup
 * You're on OSX (or possibly Linux?)
 * [You have a valid wowza license key](https://www.wowza.com/pricing/trial)
-* You are using OBS for testing (at least for now)
+* You are using [OBS](https://obsproject.com/download) for testing (at least for now)
 
 
 Create a file called `.credentials` in your root directory.  It needs to have the following:
